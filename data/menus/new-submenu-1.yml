@@ -1,0 +1,9 @@
+_schema: horizontal_subnav
+subnav_title:
+label:
+label_url:
+horizontal_subnav_color_palette:
+menu_items:
+  - text:
+    url:
+uuid: 88a01716-5b25-4349-89d0-f0754f13c9ee

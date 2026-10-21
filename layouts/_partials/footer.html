@@ -1,0 +1,124 @@
+{{ $title := site.Title }}
+{{ $parentOrg := site.Data.settings.settings.masthead.parent_org }}
+{{ $socialMediaAccounts := site.Data.settings.settings.social_media_accounts }}
+{{ $siteMenu := site.Data.settings.settings.primary_navigation.nav_links }}
+
+{{ with site.Data.settings.settings.default_content_blocks }}
+  {{ $partialName := "" }}
+  {{ range . }}
+    <section class="audience-{{ .settings.styles.audience }} tone-{{ .settings.styles.tone }} wvu-b-text xsection-component {{ .settings.layout.padding }} position-relative bg-{{ .settings.styles.color_palette }} {{ if .settings.styles.bg_subtle }}wvu-b-subtle{{ end }}" data-pagefind-ignore="all">
+      {{ $partialName = replace ._bookshop_name "design-system/default-content/" "components/default-content/" }}
+      {{ partial $partialName . }}
+    </section>
+  {{ end }}
+{{ end }}
+
+{{ with site.Data.settings.settings.footer }}
+  <footer data-pagefind-ignore="all">
+    <div class="py-6 bg-wvu-coal text-white">
+      <div class="container">
+        
+        <div class="row small">
+          <div class="col-md-6 me-auto mb-5">
+            <div class="mb-4">
+              <h2 class="helvetica-neue-bold h4">
+                <span class="d-block">{{ $title }}</span>
+              </h2>
+              {{ if $parentOrg }}
+                <p class="antonia-italic fs-5">{{ $parentOrg }}</p>
+              {{ end }}
+            </div>
+            {{ range .contact_info_blocks }}
+              <div class="mb-4">
+                {{ if or .address_lines .address_heading }}
+                  <address class="mb-2">
+                    <p class="d-flex mb-2">
+                      <span class="d-block" style="width: 20px;">
+                        <span class="fa-solid fa-location-dot text-wvu-gold" aria-hidden="true"></span>
+                      </span>
+                      <span class="d-block">
+                      <strong>{{ .address_heading }}</strong>
+                        {{ range .address_lines }}
+                          <br> {{ . }}
+                        {{ end }}
+                      </span>
+                    </p>
+                  </address>
+                {{ end }}
+                {{ with .phone }}
+                  <p class="d-flex mb-2">
+                    <span class="d-block" style="width: 20px;">
+                      <span class="fa-solid fa-phone text-wvu-gold" aria-hidden="true"></span>
+                    </span>
+                    <span class="d-block">
+                      <strong>Phone:</strong> <a class="text-decoration-none" href="tel:{{ . | urlize }}">{{ . }}</a>
+                    </span>
+                  </p>
+                {{ end }}
+                {{ with .fax }}
+                  <p class="d-flex mb-2">
+                    <span class="d-block" style="width: 20px;">
+                      <span class="fa-solid fa-fax text-wvu-gold" aria-hidden="true"></span>
+                    </span>
+                    <span class="d-block">
+                      <strong>Fax:</strong> <a class="text-decoration-none" href="tel:{{ . | urlize }}">{{ . }}</a>
+                    </span>
+                  </p>
+                {{ end }}
+                {{ with .email }}
+                  <p class="d-flex">
+                    <span class="d-block" style="width: 20px;">
+                      <span class="fa-solid fa-envelope text-wvu-gold" aria-hidden="true"></span>
+                    </span>
+                    <span class="d-block">
+                      <strong>Email:</strong> <a class="text-decoration-none" href="mailto:{{ . }}">{{ . }}</a>
+                    </span>
+                  </p>
+                {{ end }}
+              </div>
+            {{ end }}
+            {{ if $socialMediaAccounts }}
+              <ul class="list-inline mb-0">
+                {{ range $socialMediaAccounts }}
+                  <li class="list-inline-item">
+                    <a class="bg-wvu-gold border border-2 border-wvu-blue text-wvu-blue mb-0 text-decoration-none d-flex align-items-center justify-content-center rounded-circle p-3" href="{{ .url }}">
+                      <span class="fab fa-{{ .icon }} position-absolute" aria-hidden="true"></span>
+                      <span class="visually-hidden">{{ .platform }}</span>
+                    </a>
+                  </li>          
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+          {{ with .footer_blocks }}
+            {{ $partialName := "" }}
+            {{ range . }}
+              {{ $partialName = replace ._bookshop_name "design-system/footer/" "components/footer/" }}
+              {{ partial $partialName . }}
+            {{ end }}
+          {{ end }}
+        </div>
+        {{ if or .postscript.label .f_postscript_links }}
+          {{ with .postscript }}
+            <div class="d-xl-flex border-top border-bottom border-1 border-wvu-star-city-blue mt-5 py-4 justify-content-center">
+              {{ with .label }}
+                <h2 class="d-lg-inline-block h5 antonia-regular mb-3 mb-lg-0 me-3">{{ . }}</h2>
+              {{ end }}
+              {{ with .f_postscript_links }}
+                <ul class="list-inline d-inline-block mb-0">
+                  {{ range . }}                  
+                    <li class="list-inline-item">
+                      {{ if .url }}
+                        <a class="text-decoration-none config-extra-bold" href="{{ .url }}">{{ .text }}</a></li>
+                      {{ end }}
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </footer>
+{{ end }}

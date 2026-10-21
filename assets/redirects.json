@@ -1,0 +1,70 @@
+[
+  {
+		"from": "^/about/artist-release-form/?$",
+		"to": "/about-us/podcast-release-form/"
+	},
+  {
+		"from": "^/about/meet-the-moose/?$",
+		"to": "/about-us/meet-zeus/"
+	},
+  {
+		"from": "^/about/?$",
+		"to": "/about-us/"
+	},
+  {
+		"from": "^/about/(.*)/?$",
+		"to": "/about-us/$1"
+	},
+  {
+		"from": "^/black-bears-baseball/?$",
+		"to": "/sports/wv-black-bears/"
+	},
+  {
+		"from": "^/black-bears-baseball/?$",
+		"to": "/sports/wv-black-bears/"
+	},
+  {
+		"from": "^/contact/u92-executive-team/?$",
+		"to": "/contact-us/"
+	},
+  {
+		"from": "^/join-u92/?$",
+		"to": "/about-us/work-for-u92/"
+	},
+  {
+		"from": "^/people/?$",
+		"to": "/contact-us/"
+	},
+  {
+		"from": "^/programs/(.*)/?$",
+		"to": "/schedule/$1/"
+	},
+  {
+		"from": "^/sponsorships-advertising/?$",
+		"to": "https://studentmedia.wvu.edu/advertising"
+	},
+  {
+		"from": "^/sports/baseball/?$",
+		"to": "/sports/wvu-baseball/"
+	},
+  {
+		"from": "^/sports/mens-soccer/?$",
+		"to": "/sports/wvu-men-s-soccer/"
+	},
+  {
+		"from": "^/sports/women-s-soccer/?$",
+		"to": "/sports/wvu-women-s-soccer/"
+	},
+  {
+		"from": "^/sports/women-s-basketball/?$",
+		"to": "/sports/wvu-women-s-basketball/"
+	},
+  {
+		"from": "^/wireless/?$",
+		"to": "/articles/"
+  },
+  {
+		"from": "^/wireless/\\d{4}/\\d{2}/\\d{2}/(.*)/?$",
+		"to": "/articles/$1/"
+  }
+]

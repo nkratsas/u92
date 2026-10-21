@@ -1,0 +1,70 @@
+{{ define "main" }}
+
+  {{ $related := slice }}
+
+  {{ $articles := where site.RegularPages "Section" "articles" }}
+  {{ $related := $articles.Related . }}
+
+  {{ partial "bookshop_bindings" `(dict "topper" .Params.article_topper "params" .Params)` }}
+  
+  {{ $containerMargin := "" }}
+  {{ $sidebarMargin := "" }}
+
+  {{ $related := slice }}
+
+  {{- if not site.Params.env_bookshop_live -}}
+    {{ $related = .Params.related }}
+  {{- end -}}
+
+  {{ if and .Params.article_topper .Params.article_topper._bookshop_name }}
+    {{ partial "bookshop" (slice .Params.article_topper._bookshop_name (dict "topper" .Params.article_topper "params" .Params "title" .Params.title "subheading" .Params.subheading "authors" .Params.authors "image" .Params.article_image)) }}
+    {{ if eq .Params.article_topper._bookshop_name "design-system/topper/article" }}
+      {{ $containerMargin = "mt-n6" }}
+      {{ $sidebarMargin = "mt-8" }}
+    {{ end }}
+  {{ else }}
+    {{ partial "bookshop" (slice "design-system/topper/article" (dict "topper" .Params.topper "params" .Params "title" .Params.title "subheading" .Params.subheading)) }}
+  {{ end }}
+
+  <div class="py-6 position-relative audience-general tone-default wvu-b-subtle">
+    <div class="container {{ $containerMargin }}">
+      <div class="row">
+        <div class="col-xl-5"></div>
+        <div class="col-xl-14 mb-5 mb-xl-0">
+            {{ if .Params.authorString }}
+            <div class="pb-3 mb-4 wvu-author-list small lh-1 text-center">
+              <span class="antonia-light d-block mb-2 wvu-text-letter-spacing">Written by </span>
+              <br>
+              <span class="wvu-author config-extra-bold text-uppercase d-inline">{{ .Params.authorString }}</span>
+            </div>
+            {{ end }}
+          <div class="bg-option-1 pt-3 px-5 px-lg-6 pb-5 pb-lg-6">
+            <div class="antonia-regular text-dark fs-5 ">
+              {{ with .Params.article_blocks }}
+                {{ range . }}
+                  <div class="mb-5">
+                    {{ partial "bookshop" . }}
+                  </div>
+                {{ end }}
+              {{ end }}
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5" data-pagefind-ignore="all">
+          {{- if not site.Params.env_bookshop_live -}}
+            {{ with $related }}
+              <h2 class="h6 wvu-b-label {{ $sidebarMargin }}">Related</h2>
+              <ul class="wvu-ul-chevrons">
+                {{ range first 5 . }}
+                  <li><a class="text-decoration-none" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+{{ end }}

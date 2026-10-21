@@ -1,0 +1,9 @@
+<div>
+  {{- if not site.Params.env_bookshop_live -}}
+    {{ if ne .settings.config.edit_mode_only true }}
+      {{ .code | safeHTML }}
+    {{ end }}
+  {{- else -}}
+    <div class="alert alert-info">HTML components will not show in the Live Editor.</div>
+  {{- end -}}
+</div>

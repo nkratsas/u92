@@ -1,0 +1,21 @@
+_schema: horizontal_subnav
+subnav_title: Broadcast Sports
+label:
+label_url:
+horizontal_subnav_color_palette:
+menu_items:
+  - text: WVU Football
+    url: /sports/wvu-football/
+  - text: WVU Men's Basketball
+    url: /sports/wvu-men-s-basketball/
+  - text: WVU Women's Basketball
+    url: /sports/wvu-women-s-basketball/
+  - text: WVU Men's Soccer
+    url: /sports/wvu-men-s-soccer/
+  - text: WVU Women's Soccer
+    url: /sports/wvu-women-s-soccer/
+  - text: WVU Baseball
+    url: /sports/wvu-baseball/
+  - text: WV Black Bears Baseball
+    url: /sports/wv-black-bears/
+uuid: 1fbc70ed-be0b-4d75-b024-0ee366960dfe

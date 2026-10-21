@@ -1,0 +1,220 @@
+sitewide_components:
+  - title: Follow Us on Instagram
+    sw_component:
+      _bookshop_name: design-system/section/social-media-accounts
+      heading: Follow Us
+      items:
+        - class:
+          platform: instagram
+          username: u92_fm
+          url:
+      settings:
+        styles:
+          audience: general
+          tone: default
+          color_palette: option-1
+          bg_subtle:
+        layout:
+          buffer:
+          padding: py-5
+        config:
+          name: social-media-accounts
+          edit_mode_only: false
+          include_heading_postscript: false
+      is_dynamic: false
+      is_nested: false
+      use_common_wrapper: true
+    uuid: 3bf395d3-a8ab-459f-a08b-46facb678788
+  - title: STAY CONNECTED
+    sw_component:
+      _bookshop_name: design-system/section/hero-split
+      heading: STAY CONNECTED
+      image: https://ccdam.wvu.edu/wvu-u92/Layer+27.png
+      alt_text:
+      lead:
+      copy: >-
+        &nbsp;
+
+
+        ## Listen to U92 the Moose at 91.7 FM on your radio or stream live here
+        on our website or at
+        [TuneIn](https://tunein.com/radio/U92-the-Moose-917-s23884/). You can
+        also ask Alexa to "Play U92 the Moose."
+      ctas:
+        - text: Subscribe to Our Weekly Newsletter
+          icon: envelope-open-text
+          url: https://lp.constantcontactpages.com/sl/vQmeJXv
+      postscript_links:
+      settings:
+        styles:
+          audience: general
+          tone: lets-go
+          color_palette: option-3
+          bg_subtle: true
+        layout:
+          buffer:
+          margin:
+          padding: py-0
+          full_bleed: true
+        config:
+          name: hero-split
+          edit_mode_only: false
+          include_heading_postscript: false
+      is_dynamic: false
+      is_nested: false
+      use_common_wrapper: true
+    uuid: 81e66627-f849-4188-ad6b-bc0b72ee256b
+  - title: Sticky player
+    sw_component:
+      _bookshop_name: html
+      code: >
+        <div class="bottom-lock playerset" role="region" aria-label="Live Audio
+        Player">
+          <span class="player">NOW PLAYING ON THE MOOSE</span> 
+          <iframe 
+            src="https://player.broadcast.radio/wvu?mode=embed&autoplay=1" 
+            style="width:100%;max-height:58px;max-width:600px;border:none;" 
+            title="U92 The Moose Live Stream Player">
+          </iframe>
+        </div>
+      settings:
+        config:
+          edit_mode_only: false
+      is_dynamic: false
+      is_nested: false
+      use_common_wrapper: false
+    uuid: 1df404ba-98e5-4a1c-ab30-ceff62f170e6
+  - title: Top Ad
+    sw_component:
+      _bookshop_name: html
+      code: >
+        <script src="https://cdn.broadstreetads.com/init-2.min.js"></script>
+
+        <script>broadstreet.watch({ networkId: 8213 })</script>
+
+
+        <!-- U92 Top Banner Mobile : (191157) -->
+         <div class="mobile-only" align="center" style="background-color: #111; padding-bottom: 5px; padding-top: 5x;">
+          <broadstreet-zone zone-id="191157"></broadstreet-zone>
+        </div>
+
+
+        <!-- U92 Top Banner : (191156) -->
+          <div class="desktop-only" align="center" style="background-color: #111; padding-bottom: 20px; padding-top: 20px;">
+          <broadstreet-zone zone-id="191156"></broadstreet-zone>
+        </div>
+      settings:
+        config:
+          edit_mode_only: true
+      is_dynamic: false
+      is_nested: false
+      use_common_wrapper: false
+    uuid: 6170e793-dff9-40b9-899a-2e3e734c828d
+  - title: Bottom Ad
+    sw_component:
+      _bookshop_name: html
+      code: |2-
+          <script src="https://cdn.broadstreetads.com/init-2.min.js"></script>
+        <script>broadstreet.watch({ networkId: 8213 })</script>
+
+        <!-- U92 Bottom Banner Mobile -->
+            <div class="mobile-only" align="center" style="background-color: #111;">
+        <broadstreet-zone zone-id="191159"></broadstreet-zone>
+            </div>
+
+        <!-- U92 Bottom Banner -->
+          <div class="desktop-only" align="center" style="background-color: #111;">
+        <broadstreet-zone zone-id="191158"></broadstreet-zone>
+          </div>
+
+          <script type="text/javascript">
+          (function (w, d, s, p) { let f = d.getElementsByTagName(s)[0], j = d.createElement(s); j.id = 'flytedigital'; j.async = true; j.src = "https://digital.flytedesk.com/js/head.js#" + p; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'prop_yV6YpQlPCqig5dbb2huc');
+        </script>
+
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fbd6b1c3169594f"></script>
+      settings:
+        config:
+          edit_mode_only: true
+      is_dynamic: false
+      is_nested: false
+      use_common_wrapper: false
+    uuid: 59223c90-c057-4188-83c7-7f57a6dcd8ac
+  - title: Request Line and Socials
+    sw_component:
+      _bookshop_name: html
+      code: >-
+        <!-- Request and Socials -->
+
+        <div style="background-color: #554841;">
+
+        <section id="follow-u92" aria-label="Contact and Follow U92">
+          <div class="container wvu-z-index-content" style="background-color: #554841;">
+
+        <div class="align-items-center" style="padding: 0; margin: 0;"
+        align="center" >
+          <div class="row align-items-center pt-3 pb-4" style="min-height: 200px;">
+            <div class="col-md-12 col-sm-24 request">
+              <div>
+
+        <h3>U92 Song Request Line</h3>
+
+        <a href="tel:304-293-3692"><svg style="width: 1em; height: 1em; fill:
+        currentColor; vertical-align: -0.125em; padding-right: 5px;"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font
+        Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License -
+        https://fontawesome.com/license/free Copyright 2026 Fonticons,
+        Inc.--><path d="M376 32C504.1 32 608 135.9 608 264C608 277.3 597.3 288
+        584 288C570.7 288 560 277.3 560 264C560 162.4 477.6 80 376 80C362.7 80
+        352 69.3 352 56C352 42.7 362.7 32 376 32zM384 224C401.7 224 416 238.3
+        416 256C416 273.7 401.7 288 384 288C366.3 288 352 273.7 352 256C352
+        238.3 366.3 224 384 224zM352 152C352 138.7 362.7 128 376 128C451.1 128
+        512 188.9 512 264C512 277.3 501.3 288 488 288C474.7 288 464 277.3 464
+        264C464 215.4 424.6 176 376 176C362.7 176 352 165.3 352 152zM176.1
+        65.4C195.8 60 216.4 70.1 224.2 88.9L264.7 186.2C271.6 202.7 266.8 221.8
+        252.9 233.2L208.8 269.3C241.3 340.9 297.8 399.3 368.1 434.2L406.7
+        387C418 373.1 437.1 368.4 453.7 375.2L551 415.8C569.8 423.6 579.9 444.2
+        574.5 463.9L573 469.4C555.4 534.1 492.9 589.3 416.6 573.2C241.6 536.1
+        103.9 398.4 66.8 223.4C50.7 147.1 105.9 84.6 170.5 66.9L176
+        65.4z"/></svg>
+         304-293-3692</a>
+              </div>
+            </div>
+
+            
+            <div class="col-md-12 col-sm-24" style="padding-left: 5px;">
+              <h3 align="left" style="color: #fff;">Follow Us</h3>
+        <div align="left">
+            <a href="https://www.instagram.com/u92_fm/">
+          <img alt="Instagram" src="https://ccdam.wvu.edu/wvu-u92/instagram-133x100.png" max-width="50px" height="50px" style="border: 3px solid #002855; border-radius: 50px; margin-right: 10px;"></a> 
+
+
+          <a href="https://www.facebook.com/U92FM/">
+            <img alt="Facebook" src="https://ccdam.wvu.edu/wvu-u92/facebook-icon-100x100.png" style="border: 3px solid #002855;  border-radius: 50px; margin-right: 10px;"  max-width="50px" height="50px"></a> 
+          <a href="https://twitter.com/u92_fm?lang=en">  <img alt="X logo" src="https://ccdam.wvu.edu/wvu-u92/newx-128x70.png" style="border: 3px solid #fff; border-radius: 50px;  margin-right: 10px;" max-width="50px" height="50px"></a>
+          <a href="https://www.tiktok.com/@u92fm">
+          <img alt="tiktok" src="https://ccdam.wvu.edu/wvu-u92/tiktok-logo-on-transparent-background-free-vector-100x100.png" style="border: 3px solid #fff; border-radius: 50px;  margin-right: 10px;" max-width="50px" height="50px"></a> 
+          <a href="https://lp.constantcontactpages.com/sl/vQmeJXv">
+            <img alt="Newsletter logo" src="https://ccdam.wvu.edu/wvu-u92/newsletter-100x100.png" style="border: 3px solid #e7a805; border-radius: 50px;  margin-right: 10px;" max-width="50px" height="50px">
+          </a>
+        </div>
+            </div>    
+          </div>
+        </div>
+
+        </div>
+
+        </section>
+
+        </div>
+
+        <style>
+            #columns-2-1 .wvu-b-shadow {filter: drop-shadow(-10px 10px rgba(50, 50, 0, .15))!important;}
+        </style>
+      settings:
+        config:
+          edit_mode_only: false
+      is_dynamic: false
+      is_nested: false
+      use_common_wrapper: false
+    uuid: 9f07ab94-0285-4f26-a08e-6c17b62b2d8b

@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <header class="pt-6 pb-4 position-relative" data-pagefind-ignore="all">
+    <div class="container wvu-z-index-content">
+      <h1 class="config-extra-bold display-3 text-wvu-blue"><span class="wvu-b-font-adjust">{{ .Title }}</span></h1>
+    </div>
+  </header>
+
+  <div class="py-6" style="background-color:#fbfbfb;" data-pagefind-ignore="all">
+    <div class="container">
+      {{ range .Data.Terms.Alphabetical }}
+        <h2><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></h2>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}
+

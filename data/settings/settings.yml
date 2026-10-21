@@ -1,0 +1,604 @@
+meta_data:
+  description: U92 The Moose is a 24/7, student-powered radio station at West
+    Virginia University. Since 1982, we’ve filled the airwaves with new and
+    alternative music, news, sports, talk, and specialty programming — all
+    created live by students. We’re a creative outlet, a training ground, and a
+    reflection of campus life, built on real voices, real people, and a little
+    mayhem — because without you, it’s just dead air.
+  social_media_image: https://ccdam.wvu.edu/wvu-u92/images.jpeg
+  keywords:
+    - Music
+    - Sports
+    - News
+    - Radio
+    - U92
+    - West Virginia University
+    - WVU
+    - Moose
+    - Student Media
+    - Podcast
+    - Morgantown
+    - Mountaineers
+    - WWVU
+    - FM
+social_media_accounts:
+  - platform: Facebook
+    icon: facebook
+    url: https://www.facebook.com/U92FM
+  - platform: Instagram
+    icon: instagram
+    url: https://www.instagram.com/u92_fm/
+  - platform: X
+    icon: x-twitter
+    url: https://twitter.com/u92_fm
+alert_banner:
+  is_active: false
+  alert_type: info
+  home_page_only: false
+  markdown: '## [LISTEN LIVE]()'
+masthead:
+  masthead_lockup:
+    _bookshop_name: design-system/masthead/logo-lockup-standard
+    super_heading: West Virginia University
+    lockup_lines:
+      - U92 the Moose
+      - // 91.7 WWVU FM
+  parent_org: WVU Student Media
+  parent_org_url: https://studentmedia.wvu.edu/
+  buttons:
+    button_1:
+      text: Listen Now
+      url: /listen/
+    button_2:
+      text: Donate
+      url: https://give.wvu.edu/studentlife-radio
+    button_3:
+      text:
+      url:
+primary_navigation:
+  hide_primary_nav: false
+  enable_dropdowns: true
+  nav_links:
+    - text: Home
+      link: /
+      sub_nav_links:
+    - text: Music
+      link: /music/
+      sub_nav_links:
+    - text: Sports
+      link: /sports/
+      sub_nav_links:
+        - text: Sports Broadcast Schedule
+          link: /sports/sports-schedule/
+        - text: WVU Football
+          link: /sports/wvu-football/
+        - text: WVU Men's Basketball
+          link: /sports/wvu-men-s-basketball/
+        - text: WVU Women's Basketball
+          link: /sports/wvu-women-s-basketball/
+        - text: WVU Men's Soccer
+          link: /sports/wvu-men-s-soccer/
+        - text: WVU Women's Soccer
+          link: /sports/wvu-women-s-soccer/
+        - text: WVU Baseball
+          link: /sports/wvu-baseball/
+        - text: WV Black Bears Baseball
+          link: /sports/wv-black-bears/
+        - text: Podcasts
+          link: https://u92.transistor.fm/
+    - text: Schedule
+      link: /schedule/
+      sub_nav_links:
+        - text: Full Schedule
+          link: /schedule/#full-schedule
+        - text: Sports Broadcast Schedule
+          link: /sports/sports-schedule/
+    - text: Podcasts
+      link: https://u92.transistor.fm/
+      sub_nav_links:
+        - text: Podcast Request Form
+          link: /about-us/podcast-request-form/
+        - text: Podcast Release Form
+          link: /about-us/podcast-release-form/
+    - text: Wireless | News and Sports
+      link: /articles/
+      sub_nav_links:
+    - text: Underwriting/Sponsorships
+      link: https://studentmedia.wvu.edu/advertising
+      sub_nav_links:
+    - text: About Us
+      link: /about-us/
+      sub_nav_links:
+        - text: Contact Us
+          link: /contact-us/
+        - text: Meet Zeus the Moose
+          link: /about-us/meet-zeus/
+        - text: Request U92 Swag
+          link: /about-us/request-for-some-u92-swag/
+        - text: Audio/Video Release Form
+          link: /about-us/audio-video-release-form/
+        - text: Podcast Release Form
+          link: /about-us/podcast-release-form/
+        - text: Podcast Request Form
+          link: /about-us/podcast-request-form/
+        - text: Public File
+          link: https://publicfiles.fcc.gov/fm-profile/WWVU-FM
+    - text: Contact Us
+      link: /contact-us/
+      sub_nav_links:
+        - text: Facebook
+          link: https://www.facebook.com/U92FM
+        - text: Instagram
+          link: https://www.instagram.com/u92_fm/
+        - text: TikTok
+          link: https://www.tiktok.com/@u92fm
+        - text: X
+          link: https://x.com/u92_fm?lang=en
+        - text: Twitch Live Stream
+          link: https://www.twitch.tv/u92fm
+footer:
+  contact_info_blocks:
+    - address_heading: U92 the Moose
+      address_lines:
+        - 284 Prospect St
+        - Morgantown, WV 26506
+      phone: 304-293-4141
+      email: u92@mail.wvu.edu
+    - address_heading:
+      address_lines:
+      phone:
+      email:
+  footer_blocks:
+    - _bookshop_name: design-system/footer/sitemap
+    - _bookshop_name: design-system/footer/quicklinks
+      heading: Quicklinks
+      f_quicklink_items:
+        - text: Public File
+          url: https://publicfiles.fcc.gov/fm-profile/WWVU-FM
+  postscript:
+    label: More from WVU Student Media
+    f_postscript_links:
+      - text: WVU Student Media Info
+        url: https://studentmedia.wvu.edu/
+      - text: The Daily Athenaeum
+        url: https://www.thedaonline.com/
+      - text: Work for Student Media
+        url: https://www.cognitoforms.com/WVUStudentMedia/WVUStudentMediaApplication
+      - text:
+        url:
+extras:
+  custom_css: >
+    
+    .deadair h1 {
+      color: #0279bf;
+      text-align: left;
+    }
+
+
+    a.request {
+      color: #fff;
+      font-size:24px;
+    }
+
+
+    .request {
+      text-align: left;
+      font-size: 24px;
+      font-family: config-variable, arial narrow, Impact, Charcoal, arial black, helvetica neue, Helvetica, helvetica lt std, helvetica cy, Arial, lucida grande, sans-serif, sans-serif;
+      font-variation-settings: "slnt" 0, "wdth" 100, "wght" 800; 
+      color: #fff;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+
+    .antenna {
+      background-image: url('https://ccdam.wvu.edu/wvu-u92/antennabg.png');   
+      background-size: cover; 
+      background-position: center;
+      background-repeat: no-repeat;  
+    }
+
+
+    .deadair {
+      font-family: config-variable, arial narrow, Impact, Charcoal, arial black, helvetica neue, Helvetica, helvetica lt std, helvetica cy, Arial, lucida grande, sans-serif, sans-serif;
+      font-variation-settings: "slnt" 0, "wdth" 100, "wght" 800; 
+      color: #002855;
+      font-size: 1.2em;
+      line-height: 1.5;
+      text-align: left;
+
+    }
+
+
+    .neobox {
+      border: 4px solid #002855;
+      filter: drop-shadow(-10px 10px rgba(234, 170, 0, 1));
+      background: white;
+      margin: 30px;
+      padding: 20px;
+      /*border-radius: 12px;*/
+      /*box-shadow: 8px 8px 2px rgba(234, 170, 0);*/
+      /*overflow: hidden;*/
+    }
+
+
+    .neobox2 {
+      border: 4px solid #002855;
+      /*border-radius: 12px;*/
+      /*box-shadow: 8px 8px 2px rgba(234, 170, 0);*/
+      filter: drop-shadow(-10px 10px rgba(234, 170, 0, 1));
+      overflow: hidden;
+      background: #1f1f1f;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+
+
+    .calbox { 
+      border: 4px solid #002855;
+      /*border-radius: 12px;*/
+      /*box-shadow: 8px 8px 2px rgba(234, 170, 0);*/
+      filter: drop-shadow(-10px 10px rgba(234, 170, 0, 1));
+      overflow: hidden;
+      background: white;
+    }
+
+
+    .wvu-b-shadow {
+      border: 4px solid #fff;
+      /*box-shadow: 8px 8px 2px rgba(234, 170, 0);*/
+      filter: drop-shadow(-10px 10px rgba(234, 170, 0, 1))!important;
+      overflow: hidden;
+    }
+
+
+
+
+    .u92-btn {
+      border: 1px solid #002855;
+      border-radius: 8px;  
+      background-color: #002855;
+      color: #fff;
+      font-weight: 600;
+      font-family: "helvetica-neue-lt-pro"; 
+    } 
+
+
+    .u92-btn:hover {
+      background-color: #07213f !important;
+      color: #fff !important;
+    }
+
+
+
+
+    .bottom-lock {
+      position: fixed;
+      bottom: 0;      /* Sticks it to the very bottom */
+      left: 0;        /* Aligns it to the left edge */
+      width: 100%;    /* Makes it span the full width of the screen */
+      
+      /* Visual styling */
+      background-color: #111;
+      color: white;
+      border-top: 4px solid #EAAA00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      /* Stacking & Focus Fixes */
+      z-index: 99999; /* Higher priority than jump links / sticky navs */
+      isolation: isolate; /* Enforces a top-level stacking context */
+    }
+
+
+
+    .player {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*padding-right: 10px;*/
+      padding-left: 10px;
+      font-weight: 700;
+      color: #fff; 
+      font-size: 20px; 
+      font-family: config-variable, arial narrow, Impact, Charcoal, arial black, helvetica neue, Helvetica, helvetica lt std, helvetica cy, Arial, lucida grande, sans-serif, sans-serif;
+      line-height:1;
+    }
+
+
+
+
+    .btn-sm, .btn-group-sm>.btn {
+      bs-btn-padding-y: 0.25rem;
+      bs-btn-padding-x: .5rem;
+      margin: 10px;
+      bs-btn-font-size: 0.875rem;
+      bs-btn-border-radius: var(--bs-border-radius-sm);
+    }
+
+
+    .nav-link {
+      font-family: helvetica-neue-lt-pro,helvetica neue,Helvetica,helvetica lt std,helvetica cy,Arial,lucida grande,sans-serif !important; 
+      font-weight: 600;
+    }
+
+
+    /* Show by default (mobile-first) */
+
+    .mobile-only {
+      display: block; 
+    }
+
+
+    /* Hide on desktop screens (768px and wider) */
+
+    @media (min-width: 768px) {
+      .mobile-only {
+        display: none;
+      }
+    }
+
+
+    /* Hide by default on mobile screens */
+
+    .desktop-only {
+      display: none;
+    }
+
+
+    /* Show on desktop screens (768px and wider) */
+
+    @media (min-width: 768px) {
+      .desktop-only {
+        display: block; /* Or flex, grid, etc. depending on your layout */
+      }
+    }
+
+
+    .broadstreet-zone-label {
+        text-align: center !important;
+        color: #fff !important;
+        background: none !important;
+        font-size: 18px !important;
+        font-weight: 600;
+        padding: 20px 30px !important;
+
+        line-height: 1.5;
+    }
+
+
+    #street-gBcD7aXrX7Kant94 {
+      padding-top: 30px!important;
+      padding-bottom: 30px!important;
+    }
+
+
+
+    /*
+    ==========================================================================
+       ScoreStream Iframe Container Styling
+       ========================================================================== */
+
+    /* 1. Base State (Unfocused / Resting) */
+
+
+    .deadair h1 {
+      color: #0279bf;
+      text-align: left;
+    }
+
+
+    .antenna {
+      background-image: url('https://ccdam.wvu.edu/wvu-u92/antennabg.png');   
+      background-size: cover; 
+      background-position: center;
+      background-repeat: no-repeat;  
+    }
+
+
+    .deadair {
+      font-family: config-variable, arial narrow, Impact, Charcoal, arial black, helvetica neue, Helvetica, helvetica lt std, helvetica cy, Arial, lucida grande, sans-serif, sans-serif;
+      font-variation-settings: "slnt" 0, "wdth" 100, "wght" 800; 
+      color: #002855;
+      font-size: 1.2em;
+      line-height: 1.5;
+      text-align: left;
+
+    }
+
+
+    .neobox {
+      border: 4px solid #002855;
+      filter: drop-shadow(-10px 10px rgba(234, 170, 0, 1));
+      background: white;
+      margin: 30px;
+      padding: 20px;
+      /*border-radius: 12px;*/
+      /*box-shadow: 8px 8px 2px rgba(234, 170, 0);*/
+      /*overflow: hidden;*/
+    }
+
+
+    .neobox2 {
+      border: 4px solid #002855;
+      /*border-radius: 12px;*/
+      /*box-shadow: 8px 8px 2px rgba(234, 170, 0);*/
+      filter: drop-shadow(-10px 10px rgba(234, 170, 0, 1));
+      overflow: hidden;
+      background: #1f1f1f;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+
+
+    .calbox { 
+      border: 4px solid #002855;
+      /*border-radius: 12px;*/
+      /*box-shadow: 8px 8px 2px rgba(234, 170, 0);*/
+      filter: drop-shadow(-10px 10px rgba(234, 170, 0, 1));
+      overflow: hidden;
+      background: white;
+    }
+
+
+    .wvu-b-shadow {
+      border: 4px solid #fff;
+      /*box-shadow: 8px 8px 2px rgba(234, 170, 0);*/
+      filter: drop-shadow(-10px 10px rgba(234, 170, 0, 1))!important;
+      overflow: hidden;
+    }
+
+
+
+
+    .u92-btn {
+      border: 1px solid #002855;
+      border-radius: 8px;  
+      background-color: #002855;
+      color: #fff;
+      font-weight: 600;
+      font-family: "helvetica-neue-lt-pro"; 
+    } 
+
+
+    .u92-btn:hover {
+      background-color: #07213f !important;
+      color: #fff !important;
+    }
+
+
+
+
+    .bottom-lock {
+      position: fixed;
+      bottom: 0;      /* Sticks it to the very bottom */
+      left: 0;        /* Aligns it to the left edge */
+      width: 100%;    /* Makes it span the full width of the screen */
+      
+      /* Visual styling */
+      background-color: #111;
+      color: white;
+      border-top: 4px solid #EAAA00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      /* Stacking & Focus Fixes */
+      z-index: 99999; /* Higher priority than jump links / sticky navs */
+      isolation: isolate; /* Enforces a top-level stacking context */
+    }
+
+
+
+    .player {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*padding-right: 10px;*/
+      padding-left: 10px;
+      font-weight: 700;
+      color: #fff; 
+      font-size: 20px; 
+      font-family: config-variable, arial narrow, Impact, Charcoal, arial black, helvetica neue, Helvetica, helvetica lt std, helvetica cy, Arial, lucida grande, sans-serif, sans-serif;
+      line-height:1;
+    }
+
+
+
+
+    .btn-sm, .btn-group-sm>.btn {
+      bs-btn-padding-y: 0.25rem;
+      bs-btn-padding-x: .5rem;
+      margin: 10px;
+      bs-btn-font-size: 0.875rem;
+      bs-btn-border-radius: var(--bs-border-radius-sm);
+    }
+
+
+    .nav-link {
+      font-family: helvetica-neue-lt-pro,helvetica neue,Helvetica,helvetica lt std,helvetica cy,Arial,lucida grande,sans-serif !important; 
+      font-weight: 600;
+    }
+
+
+    /* Show by default (mobile-first) */
+
+    .mobile-only {
+      display: block; 
+    }
+
+
+    /* Hide on desktop screens (768px and wider) */
+
+    @media (min-width: 768px) {
+      .mobile-only {
+        display: none;
+      }
+    }
+
+
+    /* Hide by default on mobile screens */
+
+    .desktop-only {
+      display: none;
+    }
+
+
+    /* Show on desktop screens (768px and wider) */
+
+    @media (min-width: 768px) {
+      .desktop-only {
+        display: block; /* Or flex, grid, etc. depending on your layout */
+      }
+    }
+
+
+    .broadstreet-zone-label {
+        text-align: center !important;
+        color: #fff !important;
+        background: none !important;
+        font-size: 18px !important;
+        font-weight: 600;
+        padding: 20px 30px !important;
+
+        line-height: 1.5;
+    }
+
+
+    #street-gBcD7aXrX7Kant94 {
+      padding-top: 30px!important;
+      padding-bottom: 30px!important;
+    }
+
+
+
+    /*
+    ==========================================================================
+       ScoreStream Iframe Container Styling
+       ========================================================================== */
+
+    /* Force visible focus rings on interactive elements inside the ScoreStream
+    widget */
+
+    .scorestream-widget-container a:focus,
+
+    .scorestream-widget-container button:focus,
+
+    .scorestream-widget-container [role="button"]:focus,
+
+    .scorestream-widget-container input:focus {
+        outline: 3px solid #005a9c !important; /* High-contrast blue outline */
+        outline-offset: 2px !important;
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.9) !important; /* Ensures visibility on dark backgrounds */
+    }
+
+
+    /* Optional: If they use a custom class for their hover state, mimic it on
+    focus */
+
+    .scorestream-widget-container a:focus-visible {
+        outline: 3px solid #005a9c !important;
+    }
+  chatbot_url:

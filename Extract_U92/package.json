@@ -1,0 +1,32 @@
+{
+    "name": "extract_u92",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scrape": "rm -rf tmp && npx tsx 1_scrape.ts",
+        "images": "npx tsx 2_downloadimages.ts",
+        "uploadToS3": "npx tsx 3_uploadToS3.ts",
+        "mapAuthors": "npx tsx 4_mapAuthors.ts",
+        "buildHugo": "npx tsx 5_buildHugo.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@aws-sdk/client-s3": "^3.1146.0",
+        "@aws-sdk/lib-storage": "^3.1146.0",
+        "cheerio": "^1.2.0",
+        "dotenv": "^18.0.5",
+        "file-type": "^22.1.1",
+        "mime-types": "^3.0.2",
+        "turndown": "^7.2.4",
+        "yaml": "^2.9.1"
+    },
+    "devDependencies": {
+        "@types/mime-types": "^3.0.1",
+        "@types/node": "^26.6.4",
+        "@types/turndown": "^5.0.6"
+    }
+}

@@ -1,0 +1,39 @@
+{{ with site.Data.settings.settings.masthead }}
+  <div class="wvu-masthead">
+    <div class="container">
+      <div class="row">
+        <div class="align-self-center col-24 col-lg">
+          <div class="d-flex d-lg-block justify-content-center">
+            <a href="/"><img class="mt-4 mb-5" src="/TheMoose-horizontal-white.png" height="61px" width="350px" alt="U92 The Moose Logo" /></a>
+          </div>
+        </div>
+        <div class="col-24 col-lg-8 d-flex flex-column">
+          {{ if and .parent_org .parent_org_url }}
+            <a href="{{ .parent_org_url }}" class="small text-decoration-none bg-wvu-gold text-wvu-blue d-block px-2 py-1">{{ .parent_org }}</a>
+          {{ end }}
+          {{ if or .buttons.button_1.text .buttons.button_2.text .buttons.button_3.text }}
+            {{ with .buttons }}
+              <div class="px-0 flex-grow-1 d-flex align-content-center justify-content-center justify-content-lg-end my-3">
+                {{ with .button_1 }}
+                  {{ if .text }}
+                    <a href="{{ .url }}" class="mb-4 mb-lg-0 align-self-center btn mb-1 btn-outline-wvu-gold">{{ .text }}</a>
+                  {{ end }}
+                {{ end }}
+                {{ with .button_2 }}
+                  {{ if .text }}
+                    <a href="{{ .url }}" class="ms-2 mb-4 mb-lg-0 align-self-center btn mb-1 btn-outline-wvu-sunset">{{ .text }}</a>
+                  {{ end }}    
+                {{ end }}
+                {{ with .button_3 }}
+                  {{ if .text }}
+                    <a href="{{ .url }}" class="ms-2 mb-4 mb-lg-0 align-self-center btn mb-1 btn-outline-wvu-star-city-blue">{{ .text }}</a>
+                  {{ end }}
+                {{ end }}
+              </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

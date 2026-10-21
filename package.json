@@ -1,0 +1,26 @@
+{
+  "name": "wvu-u92",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+  "url": "git+bitbucket.org/wvudigital/wvu-u92"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/wvudigital/wvu-u92/issues"
+  },
+  "homepage": "https://bitbucket.org/wvudigital/wvu-u92#readme",
+  "dependencies": {
+    "@bookshop/browser": "3.20.0",
+    "@bookshop/generate": "3.20.0",
+    "@bookshop/hugo-engine": "3.20.0",
+    "front-matter": "^4.0.2"
+  }
+}
